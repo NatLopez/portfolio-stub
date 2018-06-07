@@ -16,6 +16,8 @@ result = dpla_connection.search('cat')
 # print(str(result.__dict__)[:500])
 
 item = result.items[0]
+
+#formats json properly
 print(json.dumps(item, sort_keys=True,indent=4))
 # print(item['sourceResource']['stateLocatedIn'])
 #
